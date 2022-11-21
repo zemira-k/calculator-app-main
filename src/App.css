@@ -1,38 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
+
+p {
+  margin: 0;
+}
+
 .App {
-  text-align: center;
+  background-color: hsl(222, 26%, 31%);
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.calculator {
+  max-width: 220px;
+  margin: auto;
+  font-family: "League Spartan", sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calculator-header {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.calculator-theme {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 10px;
+  font-weight: 700;
+  align-items: center;
+  letter-spacing: 1.5px;
+}
+
+.calculator-theme-info {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 5px;
+}
+
+.calculator-theme-num {
+  letter-spacing: 6px;
+  margin-left: 5px;
+}
+
+.calculator-btns {
+  width: 60px;
+  height: 20px;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.calculator-btn {
+  background-color: hsl(6, 63%, 50%);
+  border: none;
+  border-radius: 100px;
+  width: 12px;
+  height: 12px;
+}
+
+.calculator-sum {
+  box-sizing: border-box;
+  width: 100%;
+  height: 60px;
+  background-color: hsl(224, 36%, 15%);
+  margin-bottom: 14px;
+  border-radius: 5px;
+  font-size: 32px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  color: hsl(0, 0%, 100%);
+  line-height: 66px;
+  direction: rtl;
+  padding: 0 20px;
+}
+
+.buttons-container {
+  display: grid;
+  grid: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
+  gap: 8px;
+  background-color: hsl(224, 36%, 15%);
+  padding: 14px 14px 8px;
+  border-radius: 5px;
+}
+
+.all-buttons-container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 5px;
+}
+
+.buttom-btns {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 9px;
+  margin: 0 14px 14px;
+}
+
+.btn {
+  border: none;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 35px;
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "League Spartan", sans-serif;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 2px;
 }
 
-.App-link {
-  color: #61dafb;
+.small-btn {
+  background-color: hsl(30, 25%, 89%);
+  color: hsl(221, 14%, 31%);
+  box-shadow: 0px 2px hsl(28, 16%, 65%);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.big-btn {
+  width: 50%;
+  background-color: hsl(6, 63%, 50%);
+  color: hsl(0, 0%, 100%);
+  box-shadow: 0px 2px hsl(6, 70%, 34%);
+  font-size: 12px;
+}
+
+button[value="DEL"],
+button[value="RESET"] {
+  background-color: hsl(225, 21%, 49%);
+  box-shadow: 0px 2px hsl(224, 28%, 35%);
+  color: hsl(0, 0%, 100%);
+  font-size: 12px;
 }
