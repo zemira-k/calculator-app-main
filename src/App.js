@@ -32,17 +32,17 @@ function App() {
             <div>THEME</div>
             <div className="calculator-theme-info">
               <div className="calculator-theme-num">1 2 3</div>
-              <div className="calculator-btns">
-                <button className="calculator-btn"></button>
-                <button className="calculator-btn"></button>
-                <button className="calculator-btn"></button>
+              <div className="calculator-theme-btns">
+                <button className="calculator-theme-btn"></button>
+                <button className="calculator-theme-btn"></button>
+                <button className="calculator-theme-btn"></button>
               </div>
             </div>
           </div>
         </div>
         <div className="calculator-sum">399,981</div>
         <div className="all-buttons-container">
-          <div className="buttons-container">
+          <div className="small-buttons-container">
             {buttonsArr.map((btn) => {
               return (
                 <button className="btn small-btn" value={btn}>

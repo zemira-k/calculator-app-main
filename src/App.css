@@ -4,13 +4,16 @@ p {
   margin: 0;
 }
 
-.App {
+body {
   background-color: hsl(222, 26%, 31%);
-  padding: 20px;
+}
+
+.App {
+  padding: 20px 20px;
 }
 
 .calculator {
-  max-width: 220px;
+  max-width: 300px;
   margin: auto;
   font-family: "League Spartan", sans-serif;
 }
@@ -47,7 +50,7 @@ p {
   margin-left: 5px;
 }
 
-.calculator-btns {
+.calculator-theme-btns {
   width: 60px;
   height: 20px;
   background-color: hsl(224, 36%, 15%);
@@ -57,7 +60,7 @@ p {
   align-items: center;
 }
 
-.calculator-btn {
+.calculator-theme-btn {
   background-color: hsl(6, 63%, 50%);
   border: none;
   border-radius: 100px;
@@ -81,7 +84,14 @@ p {
   padding: 0 20px;
 }
 
-.buttons-container {
+.all-buttons-container {
+  display: flex;
+  flex-direction: column;
+  background-color: hsl(224, 36%, 15%);
+  border-radius: 5px;
+}
+
+.small-buttons-container {
   display: grid;
   grid: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
   gap: 8px;
@@ -90,12 +100,7 @@ p {
   border-radius: 5px;
 }
 
-.all-buttons-container {
-  display: flex;
-  flex-direction: column;
-  background-color: hsl(224, 36%, 15%);
-  border-radius: 5px;
-}
+
 
 .buttom-btns {
   display: flex;
@@ -110,8 +115,8 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 35px;
-  font-size: 20px;
+  height: 50px;
+  font-size: 24px;
   font-weight: 700;
   font-family: "League Spartan", sans-serif;
   border-radius: 3px;
@@ -122,21 +127,21 @@ p {
 .small-btn {
   background-color: hsl(30, 25%, 89%);
   color: hsl(221, 14%, 31%);
-  box-shadow: 0px 2px hsl(28, 16%, 65%);
+  box-shadow: 0px 3px hsl(28, 16%, 65%);
 }
 
 .big-btn {
   width: 50%;
   background-color: hsl(6, 63%, 50%);
   color: hsl(0, 0%, 100%);
-  box-shadow: 0px 2px hsl(6, 70%, 34%);
-  font-size: 12px;
+  box-shadow: 0px 3px hsl(6, 70%, 34%);
+  font-size: 16px;
 }
 
 button[value="DEL"],
 button[value="RESET"] {
   background-color: hsl(225, 21%, 49%);
-  box-shadow: 0px 2px hsl(224, 28%, 35%);
+  box-shadow: 0px 3px hsl(224, 28%, 35%);
   color: hsl(0, 0%, 100%);
-  font-size: 12px;
+  font-size: 16px;
 }
