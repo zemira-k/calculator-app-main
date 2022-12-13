@@ -1,14 +1,93 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan&display=swap");
 
+:root {
+  /* Theme 1 */
+
+  /* Backgrounds */
+  --Theme-1-main-background: hsl(222, 26%, 31%);
+  --Theme-1-toggle-keypad-background: hsl(223, 31%, 20%);
+  --Theme-1-screen-background: hsl(224, 36%, 15%);
+
+  /* Keys */
+  --Theme-1-key-background: hsl(225, 21%, 49%);
+  --Theme-1-key-shadow: hsl(224, 28%, 35%);
+
+  --Theme-1-key-background-toggle: hsl(6, 63%, 50%);
+  --Theme-1-key-shadow-toggle: hsl(6, 70%, 34%);
+
+  --Theme-1-Light-orange-key-background: hsl(30, 25%, 89%);
+  --Theme-1-orange-key-shadow: hsl(28, 16%, 65%);
+
+  /* Text */
+  --Theme-1-numbers-text: hsl(221, 14%, 31%);
+  --Theme-1-header-text: hsl(0, 0%, 100%);
+  --Theme-1-del-reset-text: hsl(0, 0%, 100%);
+  --Theme-1-equal-text: hsl(0, 0%, 100%);
+
+  /* Theme 2 */
+  /* Backgrounds */
+  --Theme-2-main-background: hsl(0, 0%, 90%);
+  --Theme-2-toggle-keypad-background: hsl(0, 5%, 81%);
+  --Theme-2-screen-background: hsl(0, 0%, 93%);
+
+  /* Keys */
+  --Theme-2-key-background: hsl(185, 42%, 37%);
+  --Theme-2-key-shadow: hsl(185, 58%, 25%);
+
+  --Theme-2-key-background-toggle: hsl(25, 98%, 40%);
+  --Theme-2-key-shadow-toggle: hsl(25, 99%, 27%);
+
+  --Theme-2-Light-orange-key-background: hsl(45, 7%, 89%);
+  --Theme-2-orange-key-shadow: hsl(35, 11%, 61%);
+
+  /* Text */
+  --Theme-2-numbers-text: hsl(60, 10%, 19%);
+  --Theme-2-header-text: hsl(60, 10%, 19%);
+  --Theme-2-del-reset-text: hsl(0, 0%, 100%);
+  --Theme-2-equal-text: hsl(0, 0%, 100%);
+
+  /* Theme 3 */
+  /* Backgrounds */
+  --Theme-3-main-background: hsl(268, 75%, 9%);
+  --Theme-3-toggle-keypad-background: hsl(268, 71%, 12%);
+  --Theme-3-screen-background: hsl(268, 71%, 12%);
+
+  /* Keys */
+  --Theme-3-key-background: hsl(281, 89%, 26%);
+  --Theme-3-key-shadow: hsl(285, 91%, 52%);
+
+  --Theme-3-key-background-toggle: hsl(176, 100%, 44%);
+  --Theme-3-key-shadow-toggle: hsl(177, 92%, 70%);
+
+  --Theme-3-Light-orange-key-background: hsl(268, 47%, 21%);
+  --Theme-3-orange-key-shadow: hsl(290, 70%, 36%);
+
+  /* Text */
+  --Theme-3-numbers-text: hsl(52, 100%, 62%);
+  --Theme-3-header-text: hsl(52, 100%, 62%);
+  --Theme-3-equal-text: hsl(198, 20%, 13%);
+  --Theme-3-del-reset-text: hsl(0, 0%, 100%);
+
+  /* theme 1 mode */
+  /* --main-background: var(--Theme-1-main-background);
+  --toggle-keypad-background: var(--Theme-1-toggle-keypad-background);
+  --screen-background: var(--Theme-1-screen-background);
+  --key-background: var(--Theme-1-key-background);
+  --key-shadow: var(--Theme-1-key-shadow);
+  --key-background-toggle: var(--Theme-1-key-background-toggle);
+  --key-shadow-toggle: var(--Theme-1-key-shadow-toggle);
+  --Light-orange-key-background: var(--Theme-1-Light-orange-key-background);
+  --orange-key-shadow: var(--Theme-1-orange-key-shadow);
+  --dark-text: var(--Theme-1-dark-text);
+  --White-text: var(--Theme-1-White-text); */
+}
+
+
 p {
   margin: 0;
 }
 
-body {
-  background-color: hsl(222, 26%, 31%);
-}
-
-.App {
+.App {  
   padding: 20% 20px;
 }
 
@@ -21,7 +100,6 @@ body {
 .calculator-header {
   display: flex;
   justify-content: space-between;
-  color: white;
   font-size: 28px;
   font-weight: 700;
   margin-bottom: 20px;
@@ -53,7 +131,6 @@ body {
 .calculator-theme-btns {
   width: 60px;
   height: 20px;
-  background-color: hsl(224, 36%, 15%);
   border-radius: 10px;
   display: flex;
   justify-content: space-around;
@@ -61,24 +138,23 @@ body {
 }
 
 .calculator-theme-btn {
-  background-color: hsl(6, 63%, 50%);
   border: none;
   border-radius: 100px;
   width: 12px;
   height: 12px;
+  cursor: pointer;
+  opacity: 0;
 }
 
 .calculator-sum {
   box-sizing: border-box;
   width: 100%;
   height: 60px;
-  background-color: hsl(224, 36%, 15%);
   margin-bottom: 14px;
   border-radius: 5px;
   font-size: 32px;
   font-weight: 700;
   font-family: "League Spartan", sans-serif;
-  color: hsl(0, 0%, 100%);
   line-height: 66px;
   direction: rtl;
   padding: 0 20px;
@@ -87,7 +163,6 @@ body {
 .all-buttons-container {
   display: flex;
   flex-direction: column;
-  background-color: hsl(224, 36%, 15%);
   border-radius: 5px;
 }
 
@@ -95,7 +170,6 @@ body {
   display: grid;
   grid: 1fr 1fr 1fr 1fr / 1fr 1fr 1fr 1fr;
   gap: 8px;
-  background-color: hsl(224, 36%, 15%);
   padding: 14px 14px 8px;
   border-radius: 5px;
 }
@@ -122,24 +196,11 @@ body {
   margin-bottom: 2px;
 }
 
-.small-btn {
-  background-color: hsl(30, 25%, 89%);
-  color: hsl(221, 14%, 31%);
-  box-shadow: 0px 3px hsl(28, 16%, 65%);
-}
-
 .big-btn {
   width: 50%;
-  background-color: hsl(6, 63%, 50%);
-  color: hsl(0, 0%, 100%);
-  box-shadow: 0px 3px hsl(6, 70%, 34%);
   font-size: 16px;
 }
 
-button[value="DEL"],
-button[value="RESET"] {
-  background-color: hsl(225, 21%, 49%);
-  box-shadow: 0px 3px hsl(224, 28%, 35%);
-  color: hsl(0, 0%, 100%);
-  font-size: 16px;
+.calculator-theme-btn-visible {
+  opacity: 1;
 }
