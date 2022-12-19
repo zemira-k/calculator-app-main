@@ -67,19 +67,6 @@
   --Theme-3-header-text: hsl(52, 100%, 62%);
   --Theme-3-equal-text: hsl(198, 20%, 13%);
   --Theme-3-del-reset-text: hsl(0, 0%, 100%);
-
-  /* theme 1 mode */
-  /* --main-background: var(--Theme-1-main-background);
-  --toggle-keypad-background: var(--Theme-1-toggle-keypad-background);
-  --screen-background: var(--Theme-1-screen-background);
-  --key-background: var(--Theme-1-key-background);
-  --key-shadow: var(--Theme-1-key-shadow);
-  --key-background-toggle: var(--Theme-1-key-background-toggle);
-  --key-shadow-toggle: var(--Theme-1-key-shadow-toggle);
-  --Light-orange-key-background: var(--Theme-1-Light-orange-key-background);
-  --orange-key-shadow: var(--Theme-1-orange-key-shadow);
-  --dark-text: var(--Theme-1-dark-text);
-  --White-text: var(--Theme-1-White-text); */
 }
 
 
@@ -88,7 +75,10 @@ p {
 }
 
 .App {  
-  padding: 20% 20px;
+    margin: auto;
+    width: 350px;
+    margin-top: 20px;
+    padding: 30px 20px;
 }
 
 .calculator {
